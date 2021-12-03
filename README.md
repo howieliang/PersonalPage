@@ -1,2 +1,0 @@
-# PersonalPage
-New Personal Page
