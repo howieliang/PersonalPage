@@ -1,0 +1,213 @@
+
+/* Block of conference title. */
+div.conference_title
+{
+	margin: auto auto 10px auto;
+	border: none;//solid 1px #999999;
+	width: 800px;
+	
+	font-size: 10pt;
+	font-family: "times";
+
+	color: #6655aa;
+	text-align: center;
+}
+ 
+/* Block of research title. */
+div.research_title
+{
+	margin: auto auto auto auto;
+	border: none;//solid 1px #999999;
+	width: 800px;
+	
+	font-weight: bold;
+	font-size: 16pt;
+	font-family: "Arial";
+	font-weight: bold;
+	color: #191919;
+	text-align: center;
+}
+ 
+/* Block of authors. */
+div.author_info
+{
+	margin: 10px auto auto auto;
+	border: none;//solid 1px #999999;
+	width: 700px;
+	
+	font-size: 14pt;
+	font-family: "Arial";
+	color: #191919;
+	text-align: center;
+}
+td.author_1
+{
+	width: 800px;
+}
+td.author_2
+{
+	width: 400px;
+}
+td.author_3
+{
+	width: 240px;
+}
+td.author_4
+{
+	width: 240px;
+	font-size: 11pt;
+	font-weight: bold;
+	text-align: center;
+}
+ 
+/* Block of school. */
+div.university_info
+{
+	margin: 10px auto auto auto;
+	border: none;//solid 1px #999999;
+	width: 800px;
+	
+	font-size: 10pt;
+	font-family: "Arial";
+	color: #191919;
+	text-align: center;
+}
+ 
+/* Block of main image. */
+div.main_image
+{
+	margin: 20px auto 20px auto;
+	border: none;
+	width: 800px;
+	font-size: 10pt;
+	font-family: "Arial";
+	color: #191919;
+	text-align: justify;
+}
+ 
+div.main_video
+{
+	margin: 20px auto 20px auto;
+	border: none;
+	width: 800px;
+	font-size: 10pt;
+	font-family: "Arial";
+	color: #191919;
+	text-align: center;
+}
+ 
+ 
+ 
+div.subtitle
+{
+	margin: auto auto auto auto;
+	border: none;
+	width: 800px;
+	
+	font-size: 12pt;
+	font-family: "Arial";
+	font-weight: bold;
+	color: #000000;
+	text-align: left;
+}
+ 
+/* Block of ABSTRACT. */
+div.abstract_body
+{
+	margin: auto auto auto auto;
+	border: none;
+	width: 800px;
+	
+	font-size: 11pt;
+	font-family: "Arial";
+	color: #191919;
+	text-align: justify;
+}
+ 
+div.resources
+{
+	margin: 20px auto auto auto;
+	border: none;
+	width: 800px;
+	
+	font-size: 10pt;
+	font-family: "Arial";
+	color: #191919;
+	text-align: center;
+}
+
+/* Block of PAPER link. */
+div.resources_title
+{
+	margin: 20px auto auto auto;
+	border: none;
+	width: 400px;
+	
+	font-size: 12pt;
+	font-family: "Arial";
+	font-weight: bold;
+	color: #191919;
+	text-align: left;
+}
+ 
+/* Block of video link. */
+div.video_body
+{
+	margin: auto auto auto auto;
+	border: none;
+	width: 800px;
+	
+	font-size: 10pt;
+	font-family: "Arial";
+	color: #191919;
+	text-align: center;
+}
+ 
+/* Block of PAPER link. */
+div.further_title
+{
+	margin: 20px auto auto auto;
+	border: none;
+	width: 800px;
+	
+	font-size: 12pt;
+	font-family: "Arial";
+	font-weight: bold;
+	color: #191919;
+	text-align: left;
+}
+
+div.further
+{
+	margin: auto auto auto auto;
+	border: none;
+	width: 800px;
+	
+	font-size: 10pt;
+	font-family: "Arial";
+	color: #191919;
+	text-align: justify;
+}
+/* Block of BibTex. */
+div.bibtex_title
+{
+	margin: 20px auto auto auto;
+	border: none;
+	width: 800px;
+	
+	font-size: 11pt;
+	font-family: "Arial";
+	color: #191919;
+	text-align: left;
+}
+div.bibtex_body
+{
+	margin: auto auto auto auto;
+	border: none;
+	width: 800px;
+	
+	font-size: 10pt;
+	font-family: "Courier New";
+	color: #191919;
+	text-align: left;
+}

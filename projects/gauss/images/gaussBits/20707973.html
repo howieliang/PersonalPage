@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0055)http://www.slideshare.net/slideshow/embed_code/20707973 -->
+<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="canonical" href="http://www.slideshare.net/howieliang/chi13-present">
+
+    <!-- SL:begin:notranslate -->
+    <title>ACM CHI2013 - GaussBits: Magnetic Tangible Bits for Portable and Oc...</title>
+    <!-- SL:end:notranslate -->
+    <!--[if IE]><style>.slidesContainer img { border: none } </style><![endif]-->
+    <script type="text/javascript" async="" src="beacon.js"></script><script type="text/javascript" async="" src="ga.js"></script><script type="text/javascript" src="jquery.min.js"></script>
+
+    <script type="text/javascript">
+      var slideshare_object = {
+        user: {"id":null,"is_fbuser":null,"is_li_connected":false,"fb_access_token":null,"fb_userid":null,"su":false,"userGroup":"non-member","is_opengraph_user":false,"opengraph_permissions":{},"loggedin":false,"is_pro":"false","login":"guest","name":null,"has_uploads":null},
+        timer: { start: (new Date()).getTime(), end: '', execTime: '' },
+        top_nav: { get_url: "/top_nav"},
+        li_bar: {get_url: "/li_bar"},
+        dev: false,
+        fb_app_name: 'slideshare',
+        init: [],
+        feature_flag: []
+      };
+    </script>
+
+    <script src="global.js" type="text/javascript"></script>
+
+      <script type="text/javascript">
+        var _jspl = {}
+        _jspl.pageInitTime = (new Date()).getTime();
+        window._gaq = [];
+        _gaq.push(['_setAccount','UA-2330466-1']);
+        _gaq.push(['_setDomainName', '.slideshare.net']);
+        _gaq.push(['_addIgnoredRef', 'slideshare.net']);
+        _gaq.push(['_setCustomVar', 2, 'document_referrer', document.referrer]);
+        _gaq.push(['_trackPageview', '/embedPlayerView']);
+        (function(){
+          // google analytics
+          var ga = document.createElement('script'); 
+          ga.type = 'text/javascript'; 
+          ga.async = true;
+          ga.src = ('https:' == document.location.protocol ?
+            'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(ga, s);
+          
+          //comscore
+          _comscore = window._comscore || [];
+          _comscore.push({ c1: "7", c2: "6402952", c3: "1" });
+          var ca = document.createElement("script");
+          ca.type = 'text/javascript';
+          s = document.getElementsByTagName("script")[0]; 
+          ca.async = true;
+          ca.src = (document.location.protocol == "https:" ?
+            "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+          s.parentNode.insertBefore(ca, s); 
+          
+        })();
+      </script>
+    <link href="combined_presentation.css" media="screen" rel="stylesheet" type="text/css">
+
+      <script src="combined_presentation.js" type="text/javascript"></script>
+
+    
+    <script type="text/javascript">
+      config = {"page":null,"id":20707973,"ppt_location":"chi13present-130507011346-phpapp01","embed_sizes":{"presets":{"preset1":{"displaySize":{"width":40,"height":30},"size":{"width":340,"height":290}},"preset4":{"displaySize":{"width":70,"height":53},"size":{"width":595,"height":485}},"preset3":{"displaySize":{"width":60,"height":45},"size":{"width":510,"height":420}},"preset2":{"displaySize":{"width":50,"height":38},"size":{"width":425,"height":355}}},"config":{"defaultPreset":"preset2"}},"html_eotfont_url_suffix":"-eot.js","fullscreen_url":"/fullscreen/howieliang/chi13-present","has_video":false,"show_related_content":"1","image_bucket_location":"//image.slidesharecdn.com/chi13present-130507011346-phpapp01","hosted_in":"embed","enable_viewSS":true,"slideshow_slideshow_type":0,"slideshow_real_total_slides_count":80,"player_type":"presentation","mode":"html","slideview_url":"/howieliang/chi13-present?ref=http://www.cmlab.csie.ntu.edu.tw/~howieliang/GaussBits.html","image_ready":true,"spinner_url":"//public.slidesharecdn.com/b/images/ssplayer/loading.gif","use_ssl":false,"start_slide":1,"share_cta":{"html":"\u003Cdiv class=\"action-btns-container persistent\"\u003E\n    \u003Ca rel=\"nofollow\" title=\"Like this presentation\" href = \"/login\" target=\"_blank\" class=\"action-btn favorite j-favorite ss-action\" data-ssid=\"20707973\"\u003E\n      \u003Cspan class=\"action-btn-icon\"\u003E\u003C/span\u003E\n      \u003Cspan class=\"action-btn-text\"\u003ELike\u003C/span\u003E\n    \u003C/a\u003E\n\n  \u003Ca rel=\"nofollow\" href=\"#\" title=\"Share this presentation\" class=\"action-btn share j-share\" data-ssid=\"20707973\"\u003E\n    \u003Cspan class=\"action-btn-icon\"\u003E\u003C/span\u003E\n    \u003Cspan class=\"action-btn-text\"\u003EShare\u003C/span\u003E\n  \u003C/a\u003E\n\n    \u003Ca rel=\"nofollow\" href=\"/signup?from=download\u0026amp;from_source=%2Fsavedfiles%3Fs_title%3Dchi13-present%26user_login%3Dhowieliang\u0026amp;download_id=20707973-ec6cfbf9193dbce065c042ba0181c93dba2a8127-slideshow\" target=\"_blank\" title=\"Save this presentation\" class=\"action-btn save j-save ss-action\"\u003E\n      \u003Cspan class=\"save action-btn-icon\"\u003E\u003C/span\u003E\n      \u003Cspan class=\"action-btn-text\"\u003ESave\u003C/span\u003E\n    \u003C/a\u003E\n\u003C/div\u003E\n"},"slide_error_template":"\u003Cstyle type=\"text/css\"\u003E\n  .jsplayer-slide-error {\n    background-color: #000;\n    padding: 20% 0 13% !important;\n  }\n  .jsplayer-slide-error div {\n    text-align: center;\n  }\n  .jsplayer-slide-error img {\n    height: 79px !important;\n    margin: 0 0 10px;\n    width: 80px !important;\n  }\n  .jsplayer-slide-error .slide-error-body {\n    color: #eee;\n    font-family: 'Lucida Grande',Verdana, Arial, Helvetica, sans-serif;\n    padding: 0 !important;\n  }\n  .jsplayer-slide-error .slide-error-body p {\n    font-size: 0.8em;\n    line-height: 1.1em;\n    margin: 7px 0 11px;\n  }\n  .jsplayer-slide-error .slide-error-body input[type=button] {\n    margin: 7px 0 0;\n    padding: 7px 14px;\n  }\n\u003C/style\u003E\n\u003Cdiv class=\"jsplayer-slide-error\"\u003E\n  \u003Cdiv style=\"position:relative;\"\u003E\n    \u003Cimg src='//public.slidesharecdn.com/b/images/ssplayer/error_dudes-80x79.png' height=\"79\" width=\"80\" /\u003E\n    \u003Cdiv class=\"slide-error-body\"\u003E\n      \u003Cp\u003EWe were unable to load the slide.\u003C/p\u003E\n      \u003Cinput class=\"btn btn-large\" type=\"button\" value=\"Reload slide\" /\u003E\n    \u003C/div\u003E\n  \u003C/div\u003E\n\u003C/div\u003E\n","wp_code":"[slideshare id=20707973\u0026doc=chi13present-130507011346-phpapp01]","show_image_player":true,"beacon_url":"stats.slideshare.net/1.gif","is_private":false,"iframe_url":"http://www.slideshare.net/slideshow/embed_code/20707973","twitter_share_text":"ACM CHI2013 - GaussBits: Magnetic Tangible Bits for Portable and Occlusion-Fr\u00e2\u20ac\u00a6","is_ssl":false,"sharescreen":{"slideshow_id":20707973,"url":"http://www.slideshare.net/howieliang/chi13-present","user_name":"","title":"ACM CHI2013 - GaussBits: Magn...","html":"\u003Cdiv class=\"shareScreen\"\u003E\n  \u003Ca href=\"#\" class=\"close\"\u003E\u0026times;\u003C/a\u003E\n  \u003Cul class=\"shareMethods\"\u003E\n    \u003Cli class=\"embed\"\u003E\n      \u003Clabel for=\"embed-code\"\u003EEmbed\u003C/label\u003E\n      \u003Cinput type='text' class=\"shareScreenEmbedCode\" value=\"code\" name=\"embed-code\" /\u003E\n    \u003C/li\u003E\n    \u003Cli class=\"url last\"\u003E\n      \u003Clabel for=\"embed-url\"\u003EURL\u003C/label\u003E\n      \u003Cinput type='text' class=\"shareScreenSSUrl\" value=\"code\" name=\"embed-url\" /\u003E\n\t\u003C/li\u003E\n  \u003C/ul\u003E\n  \u003Cform class=\"emailShare\"\u003E\n    \u003Cfieldset\u003E\n      \u003Clegend\u003EEmail this\u003C/legend\u003E\n      \u003Cinput type=\"hidden\" class=\"shareDefaultMessage\" value=\"I think you will find this useful.\" /\u003E\n      \u003Cul\u003E\n        \u003Cli\u003E\n          \u003Clabel for=\"name\"\u003EYour name\u003C/label\u003E\n          \u003Cinput class='shareScreenFromName' type=\"text\" value=\"\" /\u003E\n        \u003C/li\u003E\n        \u003Cli\u003E\n          \u003Clabel for=\"mailID\"\u003EEmail to\u003C/label\u003E\n          \u003Cinput class=\"shareScreenMailID\" type=\"text\" value=\"\" /\u003E\n        \u003C/li\u003E\n        \u003Cli class=\"submit\"\u003E\n          \u003Clabel\u003E\u0026nbsp;\u003C/label\u003E\n          \u003Cinput class=\"shareSprite\" type=\"submit\" value=\"\" /\u003E\n        \u003C/li\u003E        \n      \u003C/ul\u003E\n      \u003C/fieldset\u003E\n  \u003C/form\u003E\n\u003C/div\u003E\u003C!-- shareScreen ends here --\u003E"},"timestamp":1367908600,"video_slides":[],"html_ttffont_url_suffix":".js","fullscreen_bgcolor":"jsplBgColorWhite","referer":"http://www.cmlab.csie.ntu.edu.tw/~howieliang/GaussBits.html","video_slides_count":0,"lastscreen":{"related":[{"author":"Uptech Engineering","views":177,"thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/uptech-engineering-130604070212-phpapp02-thumbnail.jpg?cb=1370347412","url":"/uptechproducts/uptech-engineering-22429854","author_login":"uptechproducts","title":"Uptech engineering"},{"author":"ZeroField Energy","views":587,"thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/howardjohnson-thesecretworldofmagnets-spintronics2006-120114090700-phpapp01-thumbnail.jpg?cb=1326554030","url":"/zerofieldenergy/howard-johnson-the-secret-world-of-magnets-spintronics-2006","author_login":"zerofieldenergy","title":"Howard johnson   the secret world o..."},{"author":"ZeroField Energy","views":2147,"thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/howardjohnson-thesecretworldofmagnets-120324095949-phpapp01-thumbnail.jpg?cb=1333527104","url":"/zerofieldenergy/howard-johnson-the-secret-world-of-magnets","author_login":"zerofieldenergy","title":"Howard Johnson - The Secret World o..."},{"author":"Don Gono Ets","views":292,"thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/qtm0ma-120920061654-phpapp02-thumbnail.jpg?cb=1348139856","url":"/dongono2012/qtm0-ma","author_login":"dongono2012","title":"Qtm0 ma _"},{"author":"ashleylynnhyde","views":956,"thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/magnatismfinalpaper-120416111549-phpapp01-thumbnail.jpg?cb=1334594264","url":"/ashleylynnhyde/magnatism-final-paper","author_login":"ashleylynnhyde","title":"Magnatism final paper"},{"author":"Marco Koschny","views":949,"thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/magneto-opticsapplication-121128071227-phpapp02-thumbnail.jpg?cb=1354112508","url":"/MarcoKoschny/magneto-optics-applications-15386458","author_login":"MarcoKoschny","title":"Magneto optics applications"},{"author":"Don Gono Ets","views":264,"thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/qtm0ms9bmzqxtq-120920061700-phpapp01-thumbnail.jpg?cb=1348139864","url":"/dongono2012/qtm0-ms9bmzqxtq","author_login":"dongono2012","title":"Qtm0 ms9bmzqxtq _"},{"author":"Star Trace","views":1431,"thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/startracepowerpoint-120522061408-phpapp01-thumbnail.jpg?cb=1337686035","url":"/StarTrace1/star-trace-pvt-ltd","author_login":"StarTrace1","title":"Star Trace Pvt. Ltd."},{"author":"Magnetic Solution...","views":168,"thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/429417iit-120927082906-phpapp02-121101012225-phpapp01-thumbnail.jpg?cb=1351751002","url":"/magneticsolution1/magnetic-solution-engineers-maharashtra-india","author_login":"magneticsolution1","title":"Magnetic Solution Engineers Maharas..."},{"author":"IJERA Editor","views":138,"thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/ih3314181422-130606030227-phpapp01-thumbnail.jpg?cb=1370505773","url":"/ijeraeditor/ih3314181422","author_login":"ijeraeditor","title":"Ih3314181422"},{"author":"IJERA Editor","views":124,"thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/ih3314181422-130611005731-phpapp01-thumbnail.jpg?cb=1370930638","url":"/ijeraeditor/ih3314181422-22783033","author_login":"ijeraeditor","title":"Ih3314181422"},{"author":"MidoOoz","views":521,"thumbnail":"//cdn.slidesharecdn.com/ss_thumbnails/earhmagneticfeild-111208095151-phpapp01-thumbnail.jpg?cb=1323360285","url":"/MidoOoz/earh-magnetic-feild","author_login":"MidoOoz","title":"Earh magnetic feild"}],"url":"http://www.slideshare.net/howieliang/chi13-present"},"toolbar_html":"\u003C!--[if IE 7]\u003E\n  \u003Cstyle\u003E\n    .toolbar .navActions { position: relative; top: -28px; }\n    div.toolbar .nav {margin-left : 37%; }\n  \u003C/style\u003E\n\u003C![endif]--\u003E\n  \u003Ca href=\"#\" class=\"sprite btnViewOnSS\" title=\"View on SlideShare\"\u003E\u0026nbsp;\u003C/a\u003E\u003C!-- view on SS --\u003E\n  \u003Cdiv class=\"nav\"\u003E\n    \u003Ca href=\"#btnFirst\" class=\"btnFirst\" title=\"First Slide\" rel=\"nofollow\"\u003E\u0026laquo;\u003C/a\u003E\n    \u003Ca href=\"#btnPrevious\" class=\"btnPrevious\" title=\"Previous Slide\" rel=\"nofollow\"\u003E\u0026lsaquo;\u003C/a\u003E\n    \u003Ca href=\"#btnNext\" class=\"btnNext\" title=\"Next Slide\" rel=\"nofollow\"\u003E\u0026rsaquo;\u003C/a\u003E\n    \u003Ca href=\"#btnLast\" class=\"btnLast\" title=\"Last Slide\" rel=\"nofollow\"\u003E\u0026raquo;\u003C/a\u003E\n  \u003C/div\u003E\n  \u003Cdiv class=\"navActions\"\u003E\n    \u003Ca href=\"#\" class=\"btnFullScreen\" title=\"View Fullscreen\" rel=\"nofollow\"\u003E\u0026nbsp;\u003C/a\u003E\n    \u003Ca href=\"#\" class=\"btnLeaveFullScreen\" title=\"Exit Fullscreen\" rel=\"nofollow\"\u003E\u0026nbsp;\u003C/a\u003E\n    \u003Clabel class=\"goToSlideLabel\"\u003E\u003Cinput type=\"text\" name=\"goToSlide\" value=\"1\" /\u003E\u003Cspan\u003E/ 123\u003C/span\u003E\u003C/label\u003E\n  \u003C/div\u003E\n","render_links":"default","disable_lastscreen":false,"pin_image_url":"http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-1-638.jpg?cb=1367908600","container":"player","replayscreen":{"html":"\u003Ca href=\"#\" class=\"replayScreenReplay\" \u003EView again\u003C/a\u003E"},"has_audio":false,"twitter_recommended_users":null,"meta_error_template":"\u003Cstyle type=\"text/css\"\u003E\n  .jsplayer-slide-error {\n    background-color: #000;\n    padding: 20% 0 13% !important;\n  }\n  .jsplayer-slide-error div {\n    text-align: center;\n  }\n  .jsplayer-slide-error img {\n    height: 79px !important;\n    margin: 0 0 10px;\n    width: 80px !important;\n  }\n  .jsplayer-slide-error .slide-error-body {\n    color: #eee;\n    font-family: 'Lucida Grande',Verdana, Arial, Helvetica, sans-serif;\n    padding: 0 !important;\n  }\n  .jsplayer-slide-error .slide-error-body p {\n    font-size: 0.8em;\n    line-height: 1.1em;\n    margin: 8px 0;\n  }   \n  .jsplayer-slide-error .slide-error-body input[type=button] {\n    margin: 7px 0 0;\n    padding: 7px 14px;\n  }\n\u003C/style\u003E\n\u003Cdiv class=\"jsplayer-slide-error\"\u003E\n  \u003Cdiv style=\"position:relative;\"\u003E\n    \u003Cimg src='//public.slidesharecdn.com/b/images/ssplayer/error_dudes-80x79.png' height=\"79\" width=\"80\" /\u003E\n    \u003Cdiv class=\"slide-error-body\"\u003E\n      \u003Cp\u003EWe have encountered an error.\u003C/p\u003E\n      \u003Cp\u003EPlease refresh the page.\u003C/p\u003E\n    \u003C/div\u003E\n  \u003C/div\u003E\n\u003C/div\u003E\n","player_bgcolor":"jsplBgColorBigfoot","embed_code":"\u003Ciframe src=\"http://www.slideshare.net/slideshow/embed_code/20707973\" width=\"427\" height=\"356\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;\" allowfullscreen\u003E \u003C/iframe\u003E \u003Cdiv style=\"margin-bottom:5px\"\u003E \u003Cstrong\u003E \u003Ca href=\"https://www.slideshare.net/howieliang/chi13-present\" title=\"ACM CHI2013 - GaussBits: Magnetic Tangible Bits for Portable and Occlusion-Free Near-Surface Interactions\" target=\"_blank\"\u003EACM CHI2013 - GaussBits: Magnetic Tangible Bits for Portable and Occlusion-Free Near-Surface Interactions\u003C/a\u003E \u003C/strong\u003E from \u003Cstrong\u003E\u003Ca href=\"http://www.slideshare.net/howieliang\" target=\"_blank\"\u003ERong-Hao Liang\u003C/a\u003E\u003C/strong\u003E \u003C/div\u003E","track_slide_enable":1,"has_lead":false,"author_id":10333982,"slide_count":80,"shareoptions":{"googleplus_share":"http://plus.google.com/share?url=http%3A%2F%2Fwww.slideshare.net%2Fhowieliang%2Fchi13-present","facebook_like_button":"\u003Ciframe class=\"fb-like\" src=\"//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.slideshare.net%2Fhowieliang%2Fchi13-present\u0026amp;width=50\u0026amp;height=21\u0026amp;colorscheme=light\u0026amp;layout=button_count\u0026amp;action=like\u0026amp;show_faces=false\u0026amp;send=false\u0026amp;appId=2490221586\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:50px; height:25px;\" allowTransparency=\"true\"\u003E\u003C/iframe\u003E","linkedin_share":"http://www.slideshare.net/share/linkedin/20707973/SlideShare:%20ACM%20CHI2013%20-%20GaussBits:%20Magnetic%20Tangible%20B...","facebook_share":"http://www.slideshare.net/share/facebook/20707973/Check%20out%20this%20SlideShare%20presentation%20:%20ACM%20CHI2013%20-%20GaussBits:%20Magnetic%20Tangible%20B...","html":"\u003C!-- \u003Cscript\u003E\n(function(){  var FBInitParams = {\n    appId  : '2490221586',\n    status : true, // check login status\n    cookie : true, // enable cookies to allow the server to access the session\n    xfbml  : true, // parse XFBML\n    oauth  : true,  // to enable OAuth 2.0\n    channelUrl  : '//public.slidesharecdn.com/b/channel.html'\n  };\n  if(typeof(FB) === \"object\"){\n    window.setTimeout(function(){\n      FB.XFBML.parse();\n      FB.Event.subscribe('edge.create',fbLike);\n    },50);\n  }else{\n    window.fbAsyncInit = function() {\n      FB.init(FBInitParams);\n      FB.Event.subscribe('edge.create',fbLike);\n    }\n  }\n})();\n\u003C/script\u003E --\u003E\n\n\u003Cdiv class=\"shareoptions\"\u003E\n  \u003Cul class=\"thirdPartyShare\"\u003E\n  \t\u003Cli\u003E\u003Ca href=\"#\" class=\"shareSprite Twitter\"\u003E\u0026nbsp; \u003C/a\u003E\u003C/li\u003E\n    \u003Cli\u003E\u003Ca href=\"#\" class=\"shareSprite Linkedin\"\u003E\u0026nbsp; \u003C/a\u003E\u003C/li\u003E\n    \u003Cli\u003E\u003Ca href=\"#\" class=\"fb-like\"/\u003E\u003C/li\u003E\n  \u003C/ul\u003E\n\u003C/div\u003E\n","twitter_share":"http://www.slideshare.net/share/tweet/20707973/ACM%20CHI2013%20-%20GaussBits:%20Magnetic%20Tangible%20Bits%20for%20Portable%20and%20Occlusion-Fr%C3%A2%E2%82%AC%C2%A6"},"disable_share":false,"share_text":"ACM CHI2013 - GaussBits: Magnetic Tangible Bits for Portable and Occlusion-Free Near-Surface Interactions by Rong-Hao Liang via slideshare","stripped_title":"chi13-present","toolbar_partial":"slideshow/jsplayer_toolbar_presentation","spinner_url_fullscreen":"//public.slidesharecdn.com/b/images/ssplayer/loading_white.gif","bucket_location":"//html.slidesharecdn.com/chi13present-130507011346-phpapp01/","is_only_private":false,"iframe_code":"\u003Ciframe src=\"{iframe_url}\" width=\"{width}\" height=\"{height}\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" style=\"border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;\" allowfullscreen\u003E \u003C/iframe\u003E \u003Cdiv style=\"margin-bottom:5px\"\u003E \u003Cstrong\u003E \u003Ca href=\"https://www.slideshare.net/howieliang/chi13-present\" title=\"ACM CHI2013 - GaussBits: Magnetic Tangible Bits for Portable and Occlusion-Free Near-Surface Interactions\" target=\"_blank\"\u003EACM CHI2013 - GaussBits: Magnetic Tangible Bits for Portable and Occlusion-Free Near-Surface Interactions\u003C/a\u003E \u003C/strong\u003E from \u003Cstrong\u003E\u003Ca href=\"http://www.slideshare.net/howieliang\" target=\"_blank\"\u003ERong-Hao Liang\u003C/a\u003E\u003C/strong\u003E \u003C/div\u003E"};
+
+      $(function(){
+        jsplayer = new SSPlayer(config);
+        window.bindJsAPI && bindJsAPI(jsplayer);
+        $(jsplayer).bind('slidechanged', function(e){
+          $('.current_slide_number').text(e.ssData.index);
+        });
+      });
+      
+    </script>
+  </head>
+  <body style="border:0;margin:0;padding:0;width:100%;height:100%;" marginwidth="0" marginheight="0">
+      <div class="player embed_player   lightPlayer fluidImage fluidLayout presentation_player hide_like_save_player" id="player" style="overflow: hidden;">
+        <div id="stage" class="stage" style="height: 562px; max-height: 562px; line-height: 562px;">
+          <a class="exit-fullscreen j-exit-fullscreen"></a>
+          <div class="slide_container tall_img jsplBgColorBigfoot">
+                  <div data-index="1" class="slide show" slidenumber="1" style="min-height: 0px;">
+                    <img id="img_slide_image" class="slide_image" src="slide-1-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-1-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-1-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-1-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="2" class="slide" slidenumber="2" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-2-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-2-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-2-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-2-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="3" class="slide" slidenumber="3" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-3-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-3-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-3-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-3-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="4" class="slide" slidenumber="4" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-4-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-4-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-4-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-4-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="5" class="slide" slidenumber="5" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-5-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-5-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-5-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-5-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="6" class="slide" slidenumber="6" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-6-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-6-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-6-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-6-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="7" class="slide" slidenumber="7" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-7-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-7-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-7-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-7-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="8" class="slide" slidenumber="8" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-8-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-8-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-8-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-8-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="9" class="slide" slidenumber="9" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-9-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-9-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-9-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-9-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="10" class="slide" slidenumber="10" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-10-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-10-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-10-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-10-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="11" class="slide" slidenumber="11" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-11-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-11-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-11-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-11-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="12" class="slide" slidenumber="12" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-12-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-12-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-12-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-12-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="13" class="slide" slidenumber="13" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-13-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-13-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-13-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-13-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="14" class="slide" slidenumber="14" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-14-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-14-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-14-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-14-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="15" class="slide" slidenumber="15" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-15-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-15-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-15-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-15-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="16" class="slide" slidenumber="16" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-16-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-16-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-16-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-16-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="17" class="slide" slidenumber="17" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-17-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-17-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-17-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-17-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="18" class="slide" slidenumber="18" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-18-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-18-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-18-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-18-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="19" class="slide" slidenumber="19" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-19-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-19-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-19-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-19-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="20" class="slide" slidenumber="20" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-20-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-20-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-20-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-20-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="21" class="slide" slidenumber="21" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-21-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-21-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-21-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-21-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="22" class="slide" slidenumber="22" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-22-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-22-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-22-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-22-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="23" class="slide" slidenumber="23" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-23-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-23-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-23-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-23-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="24" class="slide" slidenumber="24" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-24-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-24-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-24-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-24-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="25" class="slide" slidenumber="25" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-25-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-25-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-25-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-25-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="26" class="slide" slidenumber="26" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-26-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-26-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-26-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-26-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="27" class="slide" slidenumber="27" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-27-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-27-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-27-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-27-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="28" class="slide" slidenumber="28" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-28-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-28-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-28-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-28-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="29" class="slide" slidenumber="29" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-29-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-29-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-29-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-29-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="30" class="slide" slidenumber="30" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-30-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-30-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-30-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-30-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="31" class="slide" slidenumber="31" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-31-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-31-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-31-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-31-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="32" class="slide" slidenumber="32" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-32-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-32-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-32-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-32-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="33" class="slide" slidenumber="33" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-33-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-33-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-33-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-33-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="34" class="slide" slidenumber="34" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-34-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-34-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-34-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-34-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="35" class="slide" slidenumber="35" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-35-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-35-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-35-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-35-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="36" class="slide" slidenumber="36" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-36-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-36-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-36-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-36-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="37" class="slide" slidenumber="37" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-37-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-37-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-37-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-37-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="38" class="slide" slidenumber="38" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-38-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-38-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-38-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-38-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="39" class="slide" slidenumber="39" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-39-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-39-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-39-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-39-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="40" class="slide" slidenumber="40" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-40-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-40-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-40-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-40-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="41" class="slide" slidenumber="41" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-41-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-41-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-41-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-41-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="42" class="slide" slidenumber="42" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-42-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-42-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-42-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-42-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="43" class="slide" slidenumber="43" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-43-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-43-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-43-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-43-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="44" class="slide" slidenumber="44" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-44-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-44-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-44-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-44-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="45" class="slide" slidenumber="45" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-45-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-45-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-45-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-45-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="46" class="slide" slidenumber="46" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-46-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-46-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-46-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-46-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="47" class="slide" slidenumber="47" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-47-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-47-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-47-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-47-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="48" class="slide" slidenumber="48" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-48-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-48-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-48-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-48-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="49" class="slide" slidenumber="49" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-49-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-49-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-49-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-49-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="50" class="slide" slidenumber="50" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-50-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-50-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-50-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-50-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="51" class="slide" slidenumber="51" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-51-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-51-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-51-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-51-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="52" class="slide" slidenumber="52" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-52-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-52-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-52-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-52-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="53" class="slide" slidenumber="53" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-53-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-53-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-53-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-53-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="54" class="slide" slidenumber="54" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-54-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-54-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-54-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-54-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="55" class="slide" slidenumber="55" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-55-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-55-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-55-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-55-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="56" class="slide" slidenumber="56" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-56-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-56-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-56-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-56-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="57" class="slide" slidenumber="57" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-57-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-57-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-57-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-57-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="58" class="slide" slidenumber="58" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-58-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-58-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-58-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-58-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="59" class="slide" slidenumber="59" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-59-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-59-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-59-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-59-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="60" class="slide" slidenumber="60" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-60-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-60-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-60-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-60-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="61" class="slide" slidenumber="61" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-61-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-61-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-61-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-61-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="62" class="slide" slidenumber="62" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-62-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-62-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-62-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-62-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="63" class="slide" slidenumber="63" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-63-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-63-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-63-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-63-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="64" class="slide" slidenumber="64" style="min-height: 0px;">
+                    <img class="slide_image" src="slide-64-1024.jpg" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-64-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-64-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-64-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="65" class="slide" slidenumber="65" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-65-1024.jpg?cb=1367908600" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-65-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-65-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-65-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="66" class="slide" slidenumber="66" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-66-1024.jpg?cb=1367908600" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-66-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-66-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-66-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="67" class="slide" slidenumber="67" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-67-1024.jpg?cb=1367908600" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-67-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-67-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-67-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="68" class="slide" slidenumber="68" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-68-1024.jpg?cb=1367908600" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-68-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-68-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-68-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="69" class="slide" slidenumber="69" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-69-1024.jpg?cb=1367908600" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-69-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-69-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-69-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="70" class="slide" slidenumber="70" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-70-1024.jpg?cb=1367908600" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-70-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-70-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-70-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="71" class="slide" slidenumber="71" style="min-height: 0px;">
+                    <img class="slide_image" src="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-71-1024.jpg?cb=1367908600" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-71-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-71-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-71-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="72" class="slide" slidenumber="72">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-72-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-72-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-72-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="73" class="slide" slidenumber="73">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-73-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-73-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-73-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="74" class="slide" slidenumber="74">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-74-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-74-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-74-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="75" class="slide" slidenumber="75">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-75-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-75-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-75-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="76" class="slide" slidenumber="76">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-76-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-76-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-76-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="77" class="slide" slidenumber="77">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-77-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-77-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-77-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="78" class="slide" slidenumber="78">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-78-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-78-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-78-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="79" class="slide" slidenumber="79">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-79-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-79-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-79-320.jpg?cb=1367908600">
+                  </div>
+                  <div data-index="80" class="slide" slidenumber="80">
+                    <img class="slide_image" src="" data-normal="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-80-638.jpg?cb=1367908600" data-full="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-80-1024.jpg?cb=1367908600" data-small="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/85/slide-80-320.jpg?cb=1367908600">
+                  </div>
+          </div>
+        </div><div class="leftpoint pointly"></div><div class="rightpoint pointly"></div> <!-- end stage -->
+        <div class="toolbar_wrapper">
+          <div class="toolbar normal">
+            <!--[if IE 7]>
+  <style>
+    .toolbar .navActions { position: relative; top: -28px; }
+    div.toolbar .nav {margin-left : 37%; }
+  </style>
+<![endif]-->
+  <a href="http://www.slideshare.net/slideshow/embed_code/20707973#" class="sprite btnViewOnSS" title="View on SlideShare" style="display: inline;">&nbsp;</a><!-- view on SS -->
+  <div class="nav">
+    <a href="http://www.slideshare.net/slideshow/embed_code/20707973#btnFirst" class="btnFirst" title="First Slide" rel="nofollow">«</a>
+    <a href="http://www.slideshare.net/slideshow/embed_code/20707973#btnPrevious" class="btnPrevious" title="Previous Slide" rel="nofollow">‹</a>
+    <a href="http://www.slideshare.net/slideshow/embed_code/20707973#btnNext" class="btnNext" title="Next Slide" rel="nofollow">›</a>
+    <a href="http://www.slideshare.net/slideshow/embed_code/20707973#btnLast" class="btnLast" title="Last Slide" rel="nofollow">»</a>
+  </div>
+  <div class="navActions">
+    <a href="http://www.slideshare.net/slideshow/embed_code/20707973#" class="btnFullScreen" title="View Fullscreen" rel="nofollow">&nbsp;</a>
+    <a href="http://www.slideshare.net/slideshow/embed_code/20707973#" class="btnLeaveFullScreen" title="Exit Fullscreen" rel="nofollow" style="display: none;">&nbsp;</a>
+    <label class="goToSlideLabel"><input type="text" name="goToSlide" value="1"><span>/80</span></label>
+  </div>
+
+          </div>
+        </div> <!-- end toolbar -->
+        <div id="lastScreen" class="hide">
+          <div class="lastScreen">
+  <div class="jsplLastScreenOverlay j-last-screen-overlay"></div>
+  <div class="pro-overlay j-lastscreen">
+    <div class="proSharingText">Like this ? Why not share!</div>
+    <ul class="lastActions j-last-screen-actions">
+      <li class="share-cta j-share-cta lastscreen-share-cta"><a class="share-btn"><span class="lastScreen-sprite"></span>Share</a></li>
+      <li class="email-cta j-email-cta"><a class="email-btn"><span class="lastScreen-sprite"></span>Email</a></li>
+      <li class="replay last">
+        <a class="replay-btn lastScreenReplay j-tooltip j-last-screen-replay" data-original-title="View again" title="View again">
+          <span class="lastScreen-sprite">&nbsp;</span>
+        </a>
+      </li>
+      <li class="close-btn lastScreen-sprite j-lastscreen-close">
+        <a>&nbsp;</a>
+      </li>
+    </ul>
+    <div class="related-presentations j-lastscreen-related">
+      <ul class="presentation-list">
+        <li>
+         <a href="http://www.slideshare.net/uptechproducts/uptech-engineering-22429854" title="Uptech engineering" target="_blank">
+           <img src="uptech-engineering-130604070212-phpapp02-thumbnail.jpg" alt="Uptech engineering">
+           <span class="presentation-meta">
+             <span class="title">Uptech engineering</span>
+             <span class="author">by&nbsp;Uptech Engineering</span>
+             <span class="view-count">177&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/zerofieldenergy/howard-johnson-the-secret-world-of-magnets-spintronics-2006" title="Howard johnson   the secret world o..." target="_blank">
+           <img src="howardjohnson-thesecretworldofmagnets-spintronics2006-120114090700-phpapp01-thumbnail.jpg" alt="Howard johnson   the secret world o...">
+           <span class="presentation-meta">
+             <span class="title">Howard johnson   the secret world o...</span>
+             <span class="author">by&nbsp;ZeroField Energy</span>
+             <span class="view-count">587&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/zerofieldenergy/howard-johnson-the-secret-world-of-magnets" title="Howard Johnson - The Secret World o..." target="_blank">
+           <img src="howardjohnson-thesecretworldofmagnets-120324095949-phpapp01-thumbnail.jpg" alt="Howard Johnson - The Secret World o...">
+           <span class="presentation-meta">
+             <span class="title">Howard Johnson - The Secret World o...</span>
+             <span class="author">by&nbsp;ZeroField Energy</span>
+             <span class="view-count">2147&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/dongono2012/qtm0-ma" title="Qtm0 ma _" target="_blank">
+           <img src="qtm0ma-120920061654-phpapp02-thumbnail.jpg" alt="Qtm0 ma _">
+           <span class="presentation-meta">
+             <span class="title">Qtm0 ma _</span>
+             <span class="author">by&nbsp;Don Gono Ets</span>
+             <span class="view-count">292&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/ashleylynnhyde/magnatism-final-paper" title="Magnatism final paper" target="_blank">
+           <img src="magnatismfinalpaper-120416111549-phpapp01-thumbnail.jpg" alt="Magnatism final paper">
+           <span class="presentation-meta">
+             <span class="title">Magnatism final paper</span>
+             <span class="author">by&nbsp;ashleylynnhyde</span>
+             <span class="view-count">956&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/MarcoKoschny/magneto-optics-applications-15386458" title="Magneto optics applications" target="_blank">
+           <img src="magneto-opticsapplication-121128071227-phpapp02-thumbnail.jpg" alt="Magneto optics applications">
+           <span class="presentation-meta">
+             <span class="title">Magneto optics applications</span>
+             <span class="author">by&nbsp;Marco Koschny</span>
+             <span class="view-count">949&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/dongono2012/qtm0-ms9bmzqxtq" title="Qtm0 ms9bmzqxtq _" target="_blank">
+           <img src="qtm0ms9bmzqxtq-120920061700-phpapp01-thumbnail.jpg" alt="Qtm0 ms9bmzqxtq _">
+           <span class="presentation-meta">
+             <span class="title">Qtm0 ms9bmzqxtq _</span>
+             <span class="author">by&nbsp;Don Gono Ets</span>
+             <span class="view-count">264&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/StarTrace1/star-trace-pvt-ltd" title="Star Trace Pvt. Ltd." target="_blank">
+           <img src="startracepowerpoint-120522061408-phpapp01-thumbnail.jpg" alt="Star Trace Pvt. Ltd.">
+           <span class="presentation-meta">
+             <span class="title">Star Trace Pvt. Ltd.</span>
+             <span class="author">by&nbsp;Star Trace</span>
+             <span class="view-count">1431&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/magneticsolution1/magnetic-solution-engineers-maharashtra-india" title="Magnetic Solution Engineers Maharas..." target="_blank">
+           <img src="429417iit-120927082906-phpapp02-121101012225-phpapp01-thumbnail.jpg" alt="Magnetic Solution Engineers Maharas...">
+           <span class="presentation-meta">
+             <span class="title">Magnetic Solution Engineers Maharas...</span>
+             <span class="author">by&nbsp;Magnetic Solution...</span>
+             <span class="view-count">168&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/ijeraeditor/ih3314181422" title="Ih3314181422" target="_blank">
+           <img src="ih3314181422-130606030227-phpapp01-thumbnail.jpg" alt="Ih3314181422">
+           <span class="presentation-meta">
+             <span class="title">Ih3314181422</span>
+             <span class="author">by&nbsp;IJERA Editor</span>
+             <span class="view-count">138&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/ijeraeditor/ih3314181422-22783033" title="Ih3314181422" target="_blank">
+           <img src="ih3314181422-130611005731-phpapp01-thumbnail.jpg" alt="Ih3314181422">
+           <span class="presentation-meta">
+             <span class="title">Ih3314181422</span>
+             <span class="author">by&nbsp;IJERA Editor</span>
+             <span class="view-count">124&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+        <li>
+         <a href="http://www.slideshare.net/MidoOoz/earh-magnetic-feild" title="Earh magnetic feild" target="_blank">
+           <img src="earhmagneticfeild-111208095151-phpapp01-thumbnail.jpg" alt="Earh magnetic feild">
+           <span class="presentation-meta">
+             <span class="title">Earh magnetic feild</span>
+             <span class="author">by&nbsp;MidoOoz</span>
+             <span class="view-count">521&nbsp;views</span>
+           </span>
+         </a>
+        </li>
+      </ul>
+    </div>
+
+  </div> <!-- end of div class pro-overlay -->
+  <div class="j-modal-share modal-share mobile-hide" style="display: none;" id="last-screen-modal-share" data-ga-track-category="" data-ga-track-action="">
+  <div class="j-modal-popup modal-popup">
+    <div class="j-modal-close modal-close"></div>
+    <div class="j-modal-content modal-content" id="modal-content" data-slideshowid="">
+      <header class="j-tabs tabs">
+        <a id="button-share-tab" class="selected j-button-share-tab">Share</a>
+        <a id="button-embed-tab" class="j-button-embed-tab">Embed</a>
+        <hr class="divider">
+      </header>
+      <div class="j-share-tab share-tab">
+        <section class="section share-social">
+          <div>
+            <ul class="j-share-social-list share-social-list">
+              <li class="facebook">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="http://www.slideshare.net/howieliang/chi13-present?ref=http://www.cmlab.csie.ntu.edu.tw/~howieliang/GaussBits.html">Facebook</a>
+                </div>
+              </li>
+              <li class="twitter">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="http://www.slideshare.net/howieliang/chi13-present?ref=http://www.cmlab.csie.ntu.edu.tw/~howieliang/GaussBits.html" data-text="ACM CHI2013 - GaussBits: Magnetic Tangible Bits for Portable and Occlusion-Frâ€¦" data-related="" data-via="SlideShare">Twitter</a>
+                </div>
+              </li>
+              <li class="linkedin">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="http://www.slideshare.net/howieliang/chi13-present?ref=http://www.cmlab.csie.ntu.edu.tw/~howieliang/GaussBits.html" data-text="ACM CHI2013 - GaussBits: Magnetic Tangible Bits for Portable and Occlusion-Free Near-Surface Interactions by Rong-Hao Liang via slideshare">LinkedIn</a>
+                </div>
+              </li>
+              <li class="pinterest">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="http://www.slideshare.net/howieliang/chi13-present?ref=http://www.cmlab.csie.ntu.edu.tw/~howieliang/GaussBits.html" data-media="http://image.slidesharecdn.com/chi13present-130507011346-phpapp01/95/slide-1-638.jpg?cb=1367908600" data-description="ACM CHI2013 - GaussBits: Magnetic Tangible Bits for Portable and Occlusion-Free Near-Surface Interactions by Rong-Hao Liang via slideshare" data-pin-do="buttonPin" data-pin-config="above">Pinterest</a>
+                </div>
+              </li>
+              <li class="wordpress">
+                <div class="social-hover">
+                  <a rel="nofollow">Wordpress</a>
+                </div>
+              </li>
+              <li class="googleplus">
+                <div class="social-hover">
+                  <a class="share-link" rel="nofollow" data-url="http://www.slideshare.net/howieliang/chi13-present?ref=http://www.cmlab.csie.ntu.edu.tw/~howieliang/GaussBits.html">Google</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="share-link-container">
+            <input type="input" class="j-share-link-url" id="share-link-url" data-ga="link" readonly="">
+          </div>
+        </section>
+        <hr class="divider">
+        <section class="section share-email">
+          <header>
+            <h3>Email this SlideShare</h3>
+            <span class="j-email-flash email-flash"></span>
+          </header>
+          <form id="share-email-form" class="j-share-email-form">
+            <input id="share-email-to" data-ga="to" class="j-share-email-to j-email-clear" name="recipients" type="email" placeholder="Recipient Email or Username" required="">
+            <input id="share-email-name" data-ga="name" class="j-share-email-name j-email-clear" name="name" type="text" placeholder="Your Name" required="">
+            <textarea id="share-email-msg" data-ga="msg" class="j-share-email-msg j-email-clear" name="msg" placeholder="I think you will find this useful."></textarea>
+            <div class="share-email-expand">
+              <div id="add-msg" class="j-add-msg" data-ga="add-msg">Add Message</div>
+              <input id="share-email-send" data-ga="send" class="j-share-email-send button" type="submit" value="Send">
+            </div>
+          </form>
+          <div id="email-sent" class="j-email-sent section"><div>
+            <span class="success-text">Email Sent!</span>
+            <button id="send-another-email" data-ga="another-email" class="j-send-another-email button btn">Send Another</button></div></div>
+        </section>
+      </div>
+      <div class="j-embed-tab embed-tab">
+        <section class="j-share-embed section share-embed">
+          <textarea id="share-embed-link" class="j-share-embed-link" readonly="" data-ga="link"></textarea>
+          <div class="share-embed-options">
+            <div class="embed-use-ssl" title="Check only if the site on which the embed code will be placed begins with &#39;https://&#39;">
+              <input type="checkbox" name="use-ssl" class="j-embed-use-ssl-cbox embed-use-ssl-cbox" data-ga="ssl">
+              <span>Generate embed code for https site</span>
+            </div>
+            <div class="embed-size">
+              <span class="title">Size (px):</span>
+              <select class="j-embed-size-picker embed-size-picker" id="embed-size-picker" data-ga="size-picker"></select>
+            </div>
+            <div class="embed-start">
+              <span class="title">Start on Slide:</span>
+              <input class="j-embed-start-picker embed-start-picker" id="embed-start-picker" pattern="\d+" data-ga="start-picker" value="1">
+            </div>
+            <div class="embed-show-related">
+              <input type="checkbox" name="related-content" checked="checked" class="j-embed-related-cbox embed-related-cbox" data-ga="related">
+              <span>Show related SlideShares at end</span>
+            </div>
+          </div>
+        </section>
+        <hr class="divider">
+        <section class="section share-wp">
+          <span>Shortcode for WordPress.com blogs</span>
+            [ <a href="http://help.slideshare.com/entries/20117147-can-i-embed-slideshare-presentations-in-wordpress-blogs-or-which-embed-code-should-i-use-for-my-word" target="_blank" rel="nofollow">?</a> ]
+          <input type="text" name="embed-code" id="share-embed-wp" value="" readonly="readonly" class="j-share-embed-wp text quiet h-wpembedcode" data-ga="wp-link">
+        </section>
+      </div>
+    </div>
+  </div>
+</div><!-- share modal -->
+
+</div><!-- last screen ends here -->
+
+        </div>
+        <div class="image_maps"></div>
+      <div class="action-btns-container persistent">
+    <a rel="nofollow" title="Like this presentation" href="http://www.slideshare.net/signup?from_source=http%3A%2F%2Fwww.slideshare.net%2Fslideshow%2Fembed_code%2F20707973" target="_blank" class="action-btn favorite j-favorite ss-action" data-ssid="20707973" data-target="#login_modal">
+      <span class="action-btn-icon"></span>
+      <span class="action-btn-text">Like</span>
+    </a>
+
+  <a rel="nofollow" href="http://www.slideshare.net/slideshow/embed_code/20707973#" title="Share this presentation" class="action-btn share j-share" data-ssid="20707973">
+    <span class="action-btn-icon"></span>
+    <span class="action-btn-text">Share</span>
+  </a>
+
+    <a rel="nofollow" href="http://www.slideshare.net/signup?from_source=http%3A%2F%2Fwww.slideshare.net%2Fslideshow%2Fembed_code%2F20707973" target="_blank" title="Save this presentation" class="action-btn save j-save ss-action" data-target="#login_modal">
+      <span class="save action-btn-icon"></span>
+      <span class="action-btn-text">Save</span>
+    </a>
+</div></div><!-- end player -->
+    <script>
+      $.ajax({
+        url : 'http://www.slideshare.net/pingback/embed_or_homepageplayerhits/20707973',
+        type : 'GET',
+        data : {
+          ref : 'http://www.cmlab.csie.ntu.edu.tw/~howieliang/GaussBits.html'
+        },
+        cache : false
+      });
+    </script>
+  
+
+</body></html>

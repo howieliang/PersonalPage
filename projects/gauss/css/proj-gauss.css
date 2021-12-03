@@ -1,0 +1,146 @@
+a {
+	color: #0AC2FF;
+}
+
+a:hover {
+	color: #666;
+}
+
+/* TEASER */
+
+#teaser {
+	height: 100%;
+}
+
+#teaser .overlay {
+	height: 100%;
+}
+
+.teaserTitle h4 {
+	color: #999;
+	margin-bottom: 20px;
+}
+
+.teaserTitle h2 {
+	font-size: 14px;
+}
+
+.info {
+	margin-top: 40px;
+	font-size: 13px;
+	color: #666;
+}
+
+.author-info,
+.university-info {
+	margin-top: 20px;
+	/*margin-bottom: 20px;*/
+}
+
+.author-info li {
+	display: inline-block;;
+	margin-right: 5px;
+}
+
+/* INTRO */
+
+#about {
+	padding-bottom: 0;
+}
+
+.innerIntro p {
+	font-size: 14px;
+}
+
+/* PUBLICATIONS */
+
+.pubs {
+	margin-top: 60px;
+}
+
+.pubs li {
+	width: 49%;
+	display: inline-block;
+	margin-bottom: 40px;
+	vertical-align: top;
+}
+
+@media (max-width: 767px){
+	.pubs li {
+		width: 100%;
+	}
+}
+
+.pubs li img {
+	width: 98%;
+}
+
+.pubs h1 {
+	color: #333;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.pubs h2 {
+	color: #666;
+	font-size: 14px;
+}
+/* PATENTS */
+
+.testimonialContent {
+	margin: 50px 0 0;
+}
+
+.testiProfile {
+	font-size: 12px;
+	margin-top: 0;
+}
+
+.testimoniaContainer blockquote {
+	color: #fff;
+	font-size: 14px;
+} 
+
+/* GET ONE */
+
+@media screen and (min-width: 480px){
+
+	.overviewSingle {
+		width: 100%;
+		margin-top: 30px;
+		padding: 0 25px;
+		text-align: left;
+	}
+
+	.overviewSingle .ico {
+		margin: 0;
+		float: left;
+	}
+
+	.overviewSingle .desc {
+		margin-left: 150px;
+	}
+
+}
+
+.overviewSingle ul {
+	margin-top: 10px;
+}
+
+.overviewSingle li {
+	list-style: disc;
+	font-size: 13px;
+	color: #666;
+}
+
+/* FOOTER */
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	/*color: #033c4f;*/
+	color: #ccc;
+}
