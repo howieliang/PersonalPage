@@ -3,9 +3,9 @@ ___ACM UIST 2022: ACM User Interface Software and Technology Symposium___
 
 # NFCStack: Identifiable Physical Building Blocks that Support Concurrent Construction and Frictionless Interaction
 
-__ Chi-Jung Lee<sup>1</sup>, Rong-Hao Liang<sup>2</sup>, Ling-Chien Yang<sup>1</sup>, Chi-Huan Chiang<sup>1</sup>, Te-Yen Wu<sup>3</sup>, Bing-Yu Chen<sup>2</sup>, __
+__Chi-Jung Lee<sup>1</sup>, Rong-Hao Liang<sup>2</sup>, Ling-Chien Yang<sup>1</sup>, Chi-Huan Chiang<sup>1</sup>, Te-Yen Wu<sup>3</sup>, Bing-Yu Chen<sup>2</sup>__
 
-_ National Taiwan University<sup>1</sup>, TU Eindhoven<sup>2</sup>, Dartmouth Colleague<sup>3</sup> _
+_National Taiwan University<sup>1</sup>, TU Eindhoven<sup>2</sup>, Dartmouth Colleague<sup>3</sup>_
 
 [ACM Digital Library](https://dl.acm.org/doi/10.1145/3526113.3545658)
 
