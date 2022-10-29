@@ -20,7 +20,7 @@ NFC, building blocks, stacking, tangible interaction.
 
 ## Cite this work (ACM)
 ```
-Chi-Jung Lee, Rong-Hao Liang, Ling-Chien Yang, Chi-Huan Chiang, Te- Yen Wu, and Bing-Yu Chen. 2022. NFCStack: Identifiable Physical Building Blocks that Support Concurrent Construction and Frictionless Interaction. In The 35th Annual ACM Symposium on User Interface Software and Technology (UIST ’22), October 29-November 2, 2022, Bend, OR, USA. ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3526113.3545658
+Chi-Jung Lee, Rong-Hao Liang, Ling-Chien Yang, Chi-Huan Chiang, Te-Yen Wu, and Bing-Yu Chen. 2022. NFCStack: Identifiable Physical Building Blocks that Support Concurrent Construction and Frictionless Interaction. In The 35th Annual ACM Symposium on User Interface Software and Technology (UIST ’22), October 29-November 2, 2022, Bend, OR, USA. ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3526113.3545658
 ```
 
 ## Cite this work (Bibtex)
